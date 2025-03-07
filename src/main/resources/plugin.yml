@@ -1,0 +1,4 @@
+name: RejuvenationTools
+version: '0.0.1'
+main: com.alicedev.rejuvenationTools.RejuvenationTools
+api-version: '1.20'
