@@ -14,7 +14,6 @@ public final class RejuvenationTools extends JavaPlugin {
         getLogger().info("Initializing plugin...");
 
         createDataFolders();
-        runGenerations();
         registerCommands();
 
         getLogger().info("Plugin successfully initialized.");
@@ -34,7 +33,6 @@ public final class RejuvenationTools extends JavaPlugin {
     }
 
     public void createDataFolders(){
-
         if(!this.getDataFolder().exists()) {
             try {
                 this.getDataFolder().mkdir();
@@ -50,9 +48,11 @@ public final class RejuvenationTools extends JavaPlugin {
                 e.printStackTrace();
             }
         }
+
+        saveDefaultConfig();
     }
 
     public void registerCommands() {
-        this.getCommand("generate").setExecutor(new CommandGenerateData());
+        this.getCommand("generate").setExecutor(new CommandGenerateData(this));
     }
 }
