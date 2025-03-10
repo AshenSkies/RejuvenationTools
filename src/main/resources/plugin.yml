@@ -3,5 +3,10 @@ version: '0.0.1'
 main: com.alicedev.rejuvenationTools.RejuvenationTools
 api-version: '1.20'
 commands:
-  rts:
-    description: RejuvenationTools Server commands
+  generate:
+    description: Generate specified Data JSONs
+    aliases: [gen]
+depend:
+  - MythicMobs
+  - MMOItems
+  - MMOCore

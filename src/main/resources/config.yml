@@ -1,2 +1,10 @@
 # Port of the webserver
 web-server-port: 7867
+server-patch: 1.0
+generate:
+  mobs:
+    plugin: "MythicMobs"
+    folder: "/Mobs"
+  mythicitems:
+    plugin: "MythicMobs"
+    folder: "/Items"
