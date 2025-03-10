@@ -6,6 +6,7 @@ commands:
   generate:
     description: Generate specified Data JSONs
     aliases: [gen]
+    permission: rejuvenationtools.generate
 depend:
   - MythicMobs
   - MMOItems
